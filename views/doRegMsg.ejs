@@ -1,0 +1,7 @@
+<% if (hasMessages) %>
+ <ul id = "messages">
+ <% messages.forEach(function(msg){ %>
+ <li class = "<% msg.type %>" > <%= msg.msg%> </li>
+ <% }) %>
+ </ul>
+ <% } %>
